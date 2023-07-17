@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F3E1F362A5B9FA500B3FF23 /* PreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F352A5B9FA500B3FF23 /* PreViewController.swift */; };
+		2F3E1F362A5B9FA500B3FF23 /* CapturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F352A5B9FA500B3FF23 /* CapturedViewController.swift */; };
 		2F3E1F3E2A5BEBAE00B3FF23 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F3D2A5BEBAE00B3FF23 /* VideoViewController.swift */; };
 		2F3E1F402A5CDC0400B3FF23 /* convertCIImageToUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F3F2A5CDC0400B3FF23 /* convertCIImageToUIImage.swift */; };
 		2F3E1F462A5D144700B3FF23 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F452A5D144700B3FF23 /* CameraView.swift */; };
 		2F3E1F482A5D1F5600B3FF23 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F472A5D1F5600B3FF23 /* Enums.swift */; };
 		2F3E1F4A2A5D243200B3FF23 /* BestDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F492A5D243200B3FF23 /* BestDevice.swift */; };
-		2F3E1F4C2A5D24D800B3FF23 /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F4B2A5D24D800B3FF23 /* PreView.swift */; };
+		2F3E1F4C2A5D24D800B3FF23 /* CapturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E1F4B2A5D24D800B3FF23 /* CapturedView.swift */; };
 		2FE9C0982A5690A200A67935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9C0972A5690A200A67935 /* AppDelegate.swift */; };
 		2FE9C09A2A5690A200A67935 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9C0992A5690A200A67935 /* SceneDelegate.swift */; };
 		2FE9C09C2A5690A200A67935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9C09B2A5690A200A67935 /* ViewController.swift */; };
@@ -44,13 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F3E1F352A5B9FA500B3FF23 /* PreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewController.swift; sourceTree = "<group>"; };
+		2F3E1F352A5B9FA500B3FF23 /* CapturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedViewController.swift; sourceTree = "<group>"; };
 		2F3E1F3D2A5BEBAE00B3FF23 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		2F3E1F3F2A5CDC0400B3FF23 /* convertCIImageToUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = convertCIImageToUIImage.swift; sourceTree = "<group>"; };
 		2F3E1F452A5D144700B3FF23 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		2F3E1F472A5D1F5600B3FF23 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		2F3E1F492A5D243200B3FF23 /* BestDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestDevice.swift; sourceTree = "<group>"; };
-		2F3E1F4B2A5D24D800B3FF23 /* PreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreView.swift; sourceTree = "<group>"; };
+		2F3E1F4B2A5D24D800B3FF23 /* CapturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedView.swift; sourceTree = "<group>"; };
 		2FE9C0942A5690A200A67935 /* Test_AVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_AVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE9C0972A5690A200A67935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FE9C0992A5690A200A67935 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2FE9C09B2A5690A200A67935 /* ViewController.swift */,
-				2F3E1F352A5B9FA500B3FF23 /* PreViewController.swift */,
+				2F3E1F352A5B9FA500B3FF23 /* CapturedViewController.swift */,
 				2F3E1F3D2A5BEBAE00B3FF23 /* VideoViewController.swift */,
 			);
 			path = ViewControllers;
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				2F3E1F452A5D144700B3FF23 /* CameraView.swift */,
-				2F3E1F4B2A5D24D800B3FF23 /* PreView.swift */,
+				2F3E1F4B2A5D24D800B3FF23 /* CapturedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3E1F402A5CDC0400B3FF23 /* convertCIImageToUIImage.swift in Sources */,
-				2F3E1F362A5B9FA500B3FF23 /* PreViewController.swift in Sources */,
+				2F3E1F362A5B9FA500B3FF23 /* CapturedViewController.swift in Sources */,
 				2FE9C09C2A5690A200A67935 /* ViewController.swift in Sources */,
 				2F3E1F3E2A5BEBAE00B3FF23 /* VideoViewController.swift in Sources */,
 				2FE9C0982A5690A200A67935 /* AppDelegate.swift in Sources */,
@@ -320,7 +320,7 @@
 				2FE9C09A2A5690A200A67935 /* SceneDelegate.swift in Sources */,
 				2F3E1F462A5D144700B3FF23 /* CameraView.swift in Sources */,
 				2F3E1F482A5D1F5600B3FF23 /* Enums.swift in Sources */,
-				2F3E1F4C2A5D24D800B3FF23 /* PreView.swift in Sources */,
+				2F3E1F4C2A5D24D800B3FF23 /* CapturedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

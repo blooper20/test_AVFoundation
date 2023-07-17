@@ -223,7 +223,7 @@ extension ViewController: AVCapturePhotoCaptureDelegate {
         
         let capturedImage = UIImage(data: imageData)
         
-        let preView = PreViewController(capturedImage: capturedImage!, session: session)
+        let preView = CapturedViewController(capturedImage: capturedImage!, session: session)
         preView.modalPresentationStyle = .fullScreen
         self.present(preView, animated: true)
         self.isTorch = false

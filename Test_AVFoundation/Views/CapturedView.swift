@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class PreView: UIView {
+class CapturedView: UIView {
     
     //MARK: - Declaration
     private var capturedImage: UIImage!
@@ -37,7 +37,7 @@ class PreView: UIView {
     }
 }
 
-extension PreView {
+extension CapturedView {
     
     //MARK: - Add View
     func addImg() {
@@ -86,15 +86,15 @@ extension PreView {
     }
 }
 
-extension PreView {
+extension CapturedView {
     
     //MARK: - Selector
     @objc func reTakeButtonTap(_ sender: UIButton) {
-        (superview?.next as? PreViewController)?.reTakeButtonTap(sender)
+        (superview?.next as? CapturedViewController)?.reTakeButtonTap(sender)
     }
     
     @objc func saveButtonTap(_ sender: UIButton) {
-        (superview?.next as? PreViewController)?.saveButtonTap(sender)
+        (superview?.next as? CapturedViewController)?.saveButtonTap(sender)
     }
 }
 

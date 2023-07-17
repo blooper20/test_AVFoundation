@@ -79,6 +79,8 @@ extension VideoViewController {
             
             videoInput = try AVCaptureDeviceInput(device: captureDevice!)
             
+            session.beginConfiguration()
+            
             if session.canAddInput(videoInput!) && session.canAddOutput(videoOutput) {
                 session.addInput(videoInput!)
                 session.addOutput(videoOutput)
@@ -97,6 +99,8 @@ extension VideoViewController {
                 
                 view.layer.addSublayer(previewLayer)
                 videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue.main)
+                
+                session.commitConfiguration()
                 
                 DispatchQueue.global(qos: .userInitiated).async {
                     self.session.startRunning()
@@ -177,7 +181,7 @@ extension VideoViewController {
                let pixelBuffer = CMSampleBufferGetImageBuffer(lastFrame),
                let capturedImage = convertCIImageToUIImage(ciImage: CIImage(cvPixelBuffer: pixelBuffer)) {
                 DispatchQueue.main.async {
-                    let preViewController = PreViewController(capturedImage: capturedImage, session: self.session)
+                    let preViewController = CapturedViewController(capturedImage: capturedImage, session: self.session)
                     preViewController.modalPresentationStyle = .fullScreen
                     self.present(preViewController, animated: true)
                 }

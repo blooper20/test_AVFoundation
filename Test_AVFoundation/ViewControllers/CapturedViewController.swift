@@ -10,7 +10,7 @@ import SnapKit
 import AVFoundation
 import Photos
 
-class PreViewController: UIViewController {
+class CapturedViewController: UIViewController {
     
     //MARK: - Declaration
     private var capturedImage: UIImage!
@@ -18,7 +18,7 @@ class PreViewController: UIViewController {
     
     
     //MARK: - UI Component
-    private var preView: PreView!
+    private var preView: CapturedView!
     
     //MARK: - Initialize
     convenience init(capturedImage: UIImage, session: AVCaptureSession) {
@@ -36,10 +36,10 @@ class PreViewController: UIViewController {
     }
 }
 
-extension PreViewController {
+extension CapturedViewController {
     
     func addPreView() {
-        preView = PreView(capturedImage: capturedImage)
+        preView = CapturedView(capturedImage: capturedImage)
         
         self.view.addSubview(preView)
         
