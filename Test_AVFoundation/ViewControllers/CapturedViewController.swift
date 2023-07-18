@@ -16,7 +16,6 @@ class CapturedViewController: UIViewController {
     private var capturedImage: UIImage!
     private var session: AVCaptureSession!
     
-    
     //MARK: - UI Component
     private var preView: CapturedView!
     

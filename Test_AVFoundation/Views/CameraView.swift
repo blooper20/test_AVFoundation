@@ -25,13 +25,11 @@ class CameraView: UIView {
     var doubleZoomButton: UIButton!
     
     var torchButton: UIButton!
-    var isDefaultLens: Bool!
     
     //MARK: - Initialize
-    convenience init(cameraMode: CameraMode, isDefaultLens: Bool) {
+    convenience init(cameraMode: CameraMode) {
         self.init()
         self.cameraMode = cameraMode
-        self.isDefaultLens = isDefaultLens
         
         addShutterButton()
         addVideoButton()
@@ -233,7 +231,7 @@ extension CameraView {
     @objc func tapShutter(_ sender: UIButton) {
         switch cameraMode {
         case .camera:
-            (superview?.next as? ViewController)?.tapShutter(sender)
+//            (superview?.next as? ViewController)?.tapShutter(sender)
             break
         case .video:
             (superview?.next as? VideoViewController)?.tapShutter(sender)
